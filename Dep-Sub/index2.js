@@ -3,6 +3,7 @@ class event {
     this.eventList = []
   }
 
+  // 订阅
   listen(key, fn) {
     if (!this.eventList[key]) {
       this.eventList[key] = []
@@ -10,6 +11,7 @@ class event {
     this.eventList[key].push(fn)
   }
 
+  // 发布
   trigger() {
     let key = Array.prototype.shift.call(arguments)
     let fns = this.eventList[key]

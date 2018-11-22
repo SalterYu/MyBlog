@@ -4,10 +4,12 @@ class Dep {
     this.subs = []
   }
 
+  // 增加订阅的内容
   addSub (sub) {
     this.subs.push(sub)
   }
 
+  // 发布
   notify () {
     this.subs.forEach(sub => sub.update())
   }
@@ -18,6 +20,7 @@ class Watcher {
     this.fn = fn
   }
 
+  // 更新
   update() {
     this.fn()
   }
