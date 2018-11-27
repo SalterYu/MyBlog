@@ -1,3 +1,7 @@
+/**
+ * 发布订阅模式
+ */
+
 class event {
   constructor() {
     this.eventList = []

@@ -1,15 +1,16 @@
+/*
+* 观察者模式
+* */
 
 class Dep {
   constructor() {
     this.subs = []
   }
 
-  // 增加订阅的内容
   addSub (sub) {
     this.subs.push(sub)
   }
 
-  // 发布
   notify () {
     this.subs.forEach(sub => sub.update())
   }
