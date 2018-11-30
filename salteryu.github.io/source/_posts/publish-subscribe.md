@@ -29,8 +29,8 @@ date: 2018年11月24日
 >3. 观察者模式是一种紧耦合状态，而发布订阅模式是一种松耦合的状态。
 >4. 观察者模式是通过主体本身去遍历观察者（维护的是观察者），然后调用订阅者的通知方法去实现。而发布订阅则是通过事件管道去通知（维护的是事件）。
 
-<h1 />
 回到Vue
+==== 
 
 Vue的双向绑定则是利用了观察者模式实现的。
 参考链接：https://segmentfault.com/a/1190000013338801
@@ -149,7 +149,7 @@ class Observer {
  }
  </code></pre>
  
- 从编译入口开始看Vue
+ Vue模版渲染
  
  在执行npm run dev或者npm run build的时候，Vue使用rollup进行编译，入口文件为entry-runtime-with-compiler.js，
  该文件有以下代码，在runtime的时候执行
@@ -221,3 +221,34 @@ renderMixin(Vue)
     }
 
 ```
+在render.js的renderMixi方法中使用了以下方法
+```vue
+// core/instance/render.js文件中 line:83
+// 这里就是将template进行转换
+try {
+      vnode = render.call(vm._renderProxy, vm.$createElement)
+  }
+
+// render方法 ，由compiler方法返回，功能是使用with语句的作用是将代码的作用域设置到一个特定的作用域中。之后的msg的都是访问的this中的属性，而this就是
+// vm._renderProxy（vm的一个代理实例），由于Vue自己的proxy方法会将this.data.msg的值的获取改为this.msg，因此msg就变成了
+// options中的data的一个值传入。经过_c (createElement)方法完成template模版的替换。
+(function anonymous(
+) {
+with(this){return _c('div',{attrs:{"id":"el"}},[_v("\n  "+_s(msg)+_s(msg)+"\n")])}
+})
+```
+###梳理下Vue初始化流程：
+>1. 在<font color=pink size=4>new</font>实例Vue的时候，调用<font color="pink" size="4">this._init(options)</font>方法将传入的对象作为$options属性存在Vue实例中。并将各种组件的props，父子组件的inject属性和指令进行合并，开始走created流程。
+>2. 执行了<font color="pink" size="4">initState()</font>方法，对所有数据包括(props和methods)进行拦截，给数据进行observer，并且给被observer过的属性增加ob属性标识，来表示已经被observer。【数据拦截原理见上方观察者模式】
+>> <font color="grey" size=2>补充:由于遍历对象的属性，则每个对象都会有一个Dep，且一个Dep可能会有许多Watcher，因为可能这个属性的值被多处使用，所以当数据改变，则遍历触发自身的所有的Watcher。即dep.notify() => Array.forEach.update</font>
+>3. 之后调用<font color=pink size=4>vm.$mount(el)</font>方法, 进行Vue的mounted。
+>4. 在这之前用一个字段mount存储目标的自定义mounted方法后调用公用的mounted方法，在mounted过程中调用<font color=pink size=4>compilerToFunctions()</font>方法返回一个render函数(一个with关键字函数，切设计虚拟DOM树)，并设置<font color=pink size=4>options.render = render</font>。
+>5. 在公用的mounted方法后有一个<font color="pink" size="4">return mount.call(this, el, hydrating)</font>方法，开始调用自定义的mounted方法。
+>6. 在自定义mounted方法中，调用<font color="pink" size="4">mountComponent()</font>完成观察者模式：实例Watcher类。
+>7. 每个Watcher类在constructor中会调用<font color="pink" size="4">this.value = this.lazy ? undefined : this.get()</font>, 而this.get()方法将自身依赖push给全局的targetStack数组中，并把Dep.target的指向指为当前Watcher。 当要获取属性的值的时候，相应属性自身的get方法之前，将会被之前observer数据拦截，此时Dep.target就存在值，就调用了内部的<font color="pink" size="4">dep.depend()</font>方法实现依赖关系，将当前Watcher放入当前Dep中，等待后期的数据更新。这样就行成了一个依赖环。
+
+最后贴一下官网的生命周期图<a href="https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA">Vue生命周期</a>
+
+Vue的详细模板编译原理<a href="https://github.com/berwin/Blog/issues/18">传送门</a>
+
+
