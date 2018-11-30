@@ -1,0 +1,23 @@
+{
+  "name": "Mywue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode development --output ./lib/index.js",
+    "build": "webpack --mode production --output ./lib/index.js",
+    "clean": "rm -rf ./lib",
+    "flow-init": "flow init"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-transform-flow-strip-types": "^7.1.6",
+    "@babel/plugin-transform-strict-mode": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "flow-bin": "^0.86.0"
+  },
+  "dependencies": {}
+}

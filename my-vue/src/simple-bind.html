@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<input type="text" id="input" />
+<script>
+  const data = {}
+  const inputEl = document.getElementById('input')
+  Object.defineProperty(data, 'text', {
+    set(newValue) {
+      inputEl.value = newValue
+      this.value = newValue
+    }
+  })
+  inputEl.onchange = function (e) {
+    data.text = e.target.value
+  }
+  data.text = 111
+</script>
+</body>
+</html>

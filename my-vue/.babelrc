@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["@babel/preset-env", {"modules": false}]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-flow-strip-types"],
+    ["@babel/plugin-transform-strict-mode", {
+      "strictMode": false
+    }]
+  ]
+}
