@@ -32,5 +32,9 @@ dep.addSub(new Watcher(() => {
   console.log('okokok')
 }))
 
+dep.addSub(new Watcher(() => {
+  console.log('aaa')
+}))
+
 dep.notify()
 

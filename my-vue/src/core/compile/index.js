@@ -2,6 +2,7 @@ class Compiler {
   constructor(el, vm) {
     this.vm = vm
     vm.$el = document.querySelector(el)
+    console.log(vm.$el)
     this.replace(vm.$el, vm)
   }
 

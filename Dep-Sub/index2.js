@@ -30,4 +30,7 @@ const myMsg = new event()
 myMsg.listen('a', (val) => {
   console.log(val)
 })
+myMsg.listen('a', (val) => {
+  console.log(val + val)
+})
 myMsg.trigger('a', 111)

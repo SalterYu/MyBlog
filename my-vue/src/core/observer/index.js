@@ -37,6 +37,7 @@ export const defineReactive = (obj, key, value) => {
       if (newVal === value) return
       // console.log(`setter: ${newVal}`)
       value = newVal
+      console.log(dep)
       dep.notify()
     }
   })
