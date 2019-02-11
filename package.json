@@ -7,5 +7,9 @@
     "push": "git push origin master"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "flow": "^0.2.3",
+    "flow-bin": "^0.92.1"
+  }
 }
