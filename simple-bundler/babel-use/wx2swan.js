@@ -17,7 +17,8 @@ const plugin = ({types: t}) => {
           const object = node.object
           if (t.isMemberExpression(node) && t.isIdentifier(object, {name: 'wx'})) {
             // console.log(node)
-            object.name = 'swan'
+            path.replaceWithSourceString('asdas')
+            // object.name = 'swan'
           }
         }
       }

@@ -209,6 +209,33 @@ const plugin = ({types: t}) => {
   }
 }
 ```
+其中 types 其实就是 babel.types这个库，在这里作为plugin会在回调的时候会把babel作为参数传入, 然后进行解构。
+可使用 types 来生成一个AST节点，或者来做浅层判断
+使用types.numericLiteral() 来生成一个数字类型的节点。
+使用types.isNumericLiteral() 来判断当前节点的name值是否为数字。
+
+在visitor中，path就是指当前访问者访问的节点。该对象下有许多属性和方法，例如
+```vue
+── 属性      
+  - node   当前节点
+  - parent  父节点
+  - parentPath 父path
+  - scope   作用域
+  - context  上下文
+  - ...
+── 方法
+  - get   当前节点
+  - findParent  向父节点搜寻节点
+  - getSibling 获取兄弟节点
+  - replaceWith  用AST节点替换该节点
+  - replaceWithSourceString  用资源字符串来代替这个节点，会在内部自动生成一个节点
+  - replaceWithMultiple 用多个AST节点替换该节点
+  - insertBefore  在节点前插入节点
+  - insertAfter 在节点后插入节点
+  - remove   删除节点
+  - ...
+```
+具体的可以查看babel-traverse
 
 ### 3.执行插件
 
