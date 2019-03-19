@@ -222,6 +222,8 @@ function test() {
 }
 ```
 
+具体代码：<a href="https://github.com/SalterYu/MyBlog/blob/master/simple-compiler/babel-use/wx2swan.js">wx2swan.js</a>
+
 ### 结尾
 分享几篇文章：
 - <a href="https://juejin.im/post/5c21b584e51d4548ac6f6c99">Babel的深入了解</a> 

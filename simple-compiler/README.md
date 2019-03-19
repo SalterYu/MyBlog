@@ -19,14 +19,13 @@ date: 2019年03月18日
 万变不离其宗，都是站在AST这个巨人的肩膀上。
 且对于体力型的，或者重复性的工作，能用工具化，流程化解决就用他们解决。
 
-在了解编译器之前，了解一下babel的编译过程。
+在了解编译器之前，了解一下babel的编译过程。<a href="https://yq.aliyun.com/articles/62671">(来源)</a>
 
-![12313](https://user-gold-cdn.xitu.io/2018/12/24/167dfa8949b0401a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
-
+![来源](https://user-gold-cdn.xitu.io/2018/12/24/167dfa8949b0401a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 <!--more-->
 
 
-### 什么是编译器
+## 什么是编译器
 
 编译器：能够把一种语言等价得转换为另一种目标语言。从现代高级编译器的角度讲，源语言是高级程序设计语言，
 容易阅读与编写，而目标语言是机器语言，即二进制代码，能够被计算机直接识别。
@@ -39,7 +38,7 @@ date: 2019年03月18日
 
 具体编译原理，查看这篇文章 <a href="https://zhuanlan.zhihu.com/p/31096468">前端为什么要学习编译原理</a>
 
-### 编译器的编译过程
+## 编译器的编译过程
 
 ### 1.词法分析
 
@@ -148,9 +147,84 @@ const visitor = {
   - ← CallExpression (exit)
 - ← Program (exit)
 
-### 代码生成
+### 4. 代码生成
 
 代码生成器应当知道如何打印AST的所有不同类型的节点，并且递归调用来打印嵌套节点，直到生成最终代码。
 
+## 制作一个babel插件
+
+由于小程序开发比较多，有接触百度小程序和微信小程序等等，肯定会面临一个转换的问题，如 wx => swan 等。
+这里就尝试做一个类似的插件。
+
+### 1. 创建基础结构（插件的基础）
+```vue
+const babel = require('babel-core');
+
+// 输入的文法
+const input = `
+function test() {
+  wx.showModal({
+    title: "modal",
+    content: 'content'
+  })
+}
+`
+
+// 需要做的插件功能
+const plugin = ({types: t}) => {
+  return {
+    visitor: {
+    }
+  }
+}
+
+// 利用插件
+const res = babel.transform(input, {
+  plugins: [plugin]
+})
+
+console.log(res.code)
+```
+
+### 2. 使用https://astexplorer.net/ 进行AST分析。
+如图所示：
+![](https://img4.tuhu.org/PeccancyCheXingYi/Fi-8bDBlO2XddekCkb9NTbL1eXv3_w649_h800.jpeg@100Q.jpg)
+
+由于需要做的是 wx => swan, 因此要找到wx这个文法对应的表达式，这里找到的是 "callee： MemberExpression"， 然后修改plugin代码
+```vue
+const plugin = ({types: t}) => {
+  return {
+    visitor: {
+      MemberExpression: {
+        enter(path, state) {
+          const node = path.node
+          const object = node.object
+          if (t.isMemberExpression(node) && t.isIdentifier(object, {name: 'wx'})) {
+            // 下方的写法可能有问题，也许有官方的接口。
+            object.name = 'swan'
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### 3.执行插件
+
+结果为: 
+```vue
+function test() {
+  swan.showModal({
+    title: "modal",
+    content: 'content'
+  });
+}
+```
+
+具体代码：<a href="https://github.com/SalterYu/MyBlog/blob/master/simple-compiler/babel-use/wx2swan.js">wx2swan.js</a>
+
 ### 结尾
-分享几篇文章：<a href="https://juejin.im/post/5c21b584e51d4548ac6f6c99">Babel的深入了解</a> 
+分享几篇文章：
+- <a href="https://juejin.im/post/5c21b584e51d4548ac6f6c99">Babel的深入了解</a> 
+- <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md#toc-writing-your-first-babel-plugin">Babel插件手册</a> 
