@@ -39,6 +39,8 @@ ViewModel 通过双向数据绑定把 View 层和 Model 层连接了起来，而
 
 Vue.js 是一个提供了 MVVM 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。 ViewModel负责连接 View 和 Model，保证视图和数据的一致性，这种轻量级的架构让前端开发更加高效、便捷。 
 
+<!--more-->
+
 回到Vue
 ==== 
 

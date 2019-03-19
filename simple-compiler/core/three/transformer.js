@@ -29,7 +29,7 @@
  *                                    |             type: 'NumberLiteral',
  *                                    |             value: '2'
  *                                    |           }]
- *  (sorry the other one is longer.)  |         }
+ *                                    |         }
  *                                    |       }
  *                                    |     }]
  *                                    |   }
@@ -37,6 +37,12 @@
  */
 const traverser = require('./traverser')
 
+/**
+ * 语义分析，分析当前的语法的词在上下文的具体意义，将AST进行改造，这个时候我们可以操纵各个属性，可以进行增删改替换等等，或者保留现在的AST，并创建一个全新的AST。
+ * 这里通过visitor进行对不同的类型做不同的操作。
+ * @param ast
+ * @returns {{type: string, body: Array}}
+ */
 function transformer(ast) {
   let newAst = {
     type: 'Program',
@@ -50,6 +56,9 @@ function transformer(ast) {
           type: 'NumberLiteral',
           value: node.value
         })
+      },
+      exit(node, parent) {
+
       }
     },
     StringLiteral: {

@@ -1,16 +1,14 @@
 {
-  "name": "my-blog",
+  "name": "simple-compiler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "push": "git push origin master"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "flow": "^0.2.3",
-    "flow-bin": "^0.92.1",
     "recast": "^0.17.3"
   }
 }

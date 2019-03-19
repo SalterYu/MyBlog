@@ -1,4 +1,47 @@
+const ast = {
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "add"
+        },
+        "arguments": [
+          {
+            "type": "NumberLiteral",
+            "value": "2"
+          },
+          {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "subtract"
+            },
+            "arguments": [
+              {
+                "type": "NumberLiteral",
+                "value": "42"
+              },
+              {
+                "type": "StringLiteral",
+                "value": "asd"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
 
+/**
+ * 代码生成，根据语义，生成目标代码
+ * @param node
+ * @returns {*}
+ */
 function codeGenerator(node) {
   switch (node.type) {
     case 'Program':
@@ -28,5 +71,7 @@ function codeGenerator(node) {
       throw new TypeError(node.type)
   }
 }
+
+// console.log(codeGenerator(ast))
 
 module.exports = codeGenerator

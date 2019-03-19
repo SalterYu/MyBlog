@@ -7,6 +7,7 @@ function compiler(input) {
   const tokens = tokenizer(input)
   const ast = parser(tokens)
   const newAst = transformer(ast)
+  // console.log(JSON.stringify(newAst, null, 2))
   const output = codeGenerator(newAst)
   return output
 }

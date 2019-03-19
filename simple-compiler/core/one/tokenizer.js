@@ -1,5 +1,6 @@
 /**
  * 将输入的表达式转换成tokens
+ * 词汇分析，分析每一个字符的类型，识别文最小词法单元。并通过一个名为标记器(或lexer )的东西将它拆分成这些名为标记的东西。 令牌是一组微小的小对象，它们描述了一段孤立的语法。它们可以是数字、标签、标点符号、运算符等等。
  * @param input
  * @returns {Array}
  */
@@ -85,7 +86,7 @@ function tokenizer(input) {
 }
 
 // const input = '(add 2 (subtract 4 "abc"))'
-
+//
 // console.log(tokenizer(input))
 
 module.exports = tokenizer

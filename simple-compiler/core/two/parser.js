@@ -2,6 +2,7 @@ const assert = require('assert');
 
 /**
  * 将转换成的tokens变成ast语法树，需要递归遍历
+ * 语法分析，获取token的标记，并将其重新格式化为描述语法各个部分及其相互关系的表示形式，称为AST。这是一个深度嵌套的对象，以一种即方便使用又能提供大量信息的方式来表示的代码。
  * @param tokens
  * @returns {{type: string, body: Array}}
  */
@@ -93,7 +94,7 @@ const ast = {
   }]
 }
 
-// assert.deepStrictEqual(parser(tokens), ast)
+assert.deepStrictEqual(parser(tokens), ast)
 
 // console.log(JSON.stringify(parser(tokens), null, 2))
 
