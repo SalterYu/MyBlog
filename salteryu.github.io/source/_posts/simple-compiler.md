@@ -33,7 +33,7 @@ date: 2019年03月18日
 
 源程序 -> 预处理器 -> 编译器 -> 目标程序 -> .... -> 可执行程序
 
-编译器又分为前端后后端。前端包括词法分析、语法分析、语义分析、中间代码生成，具有机器无关性，比较有代表性的工具是 Flex、Bison。
+编译器又分为前端和后端。前端包括词法分析、语法分析、语义分析、中间代码生成，具有机器无关性，比较有代表性的工具是 Flex、Bison。
 后端包括中间代码优化、目标代码生成，具有机器相关性，比较有代表性的工具是 LLVM。
 
 具体编译原理，查看这篇文章 <a href="https://zhuanlan.zhihu.com/p/31096468">前端为什么要学习编译原理</a>
@@ -200,8 +200,13 @@ const plugin = ({types: t}) => {
           const node = path.node
           const object = node.object
           if (t.isMemberExpression(node) && t.isIdentifier(object, {name: 'wx'})) {
-            // 下方的写法可能有问题，也许有官方的接口。
-            object.name = 'swan'
+            path.traverse({
+              Identifier(path) {
+                if (path.node.name === 'wx') {
+                  path.node.name = 'swan'
+                }
+              }
+            })
           }
         }
       }
@@ -249,7 +254,9 @@ function test() {
 }
 ```
 
-具体代码：<a href="https://github.com/SalterYu/MyBlog/blob/master/simple-compiler/babel-use/wx2swan.js">wx2swan.js</a>
+具体代码：
+<a href="https://github.com/SalterYu/MyBlog/blob/master/simple-bundler/babel-use/wx2swan.js">wx2swan.js</a>
+<a href="https://github.com/SalterYu/MyBlog/tree/master/simple-compiler">简易编译器</a>
 
 ### 结尾
 分享几篇文章：

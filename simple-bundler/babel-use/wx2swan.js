@@ -16,9 +16,13 @@ const plugin = ({types: t}) => {
           const node = path.node
           const object = node.object
           if (t.isMemberExpression(node) && t.isIdentifier(object, {name: 'wx'})) {
-            // console.log(node)
-            path.replaceWithSourceString('asdas')
-            // object.name = 'swan'
+            path.traverse({
+              Identifier(path) {
+                if (path.node.name === 'wx') {
+                  path.node.name = 'swan'
+                }
+              }
+            })
           }
         }
       }
