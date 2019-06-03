@@ -3,7 +3,6 @@ title: AST入门
 date: 2019年03月18日
 ---
 
-
 前言
 ===
 
@@ -91,6 +90,7 @@ const ast = {
 ```
 
 ### 3.语义分析（转换）
+
 这个阶段是编译器对上一个AST进行转换，它可以用一种语言操作AST, 也可以翻译成全新的语言。在这个过程中，
 我们可以通过 添加/删除/替换属性来操作节点。并基于它创造一个新的AST。例如可以把wx全转为swan等等，或者
 在原先的代码基础上添加目标结果的一些特性。
@@ -157,6 +157,7 @@ const visitor = {
 这里就尝试做一个类似的插件。
 
 ### 1. 创建基础结构（插件的基础）
+
 ```vue
 const babel = require('babel-core');
 
@@ -187,6 +188,7 @@ console.log(res.code)
 ```
 
 ### 2. 使用https://astexplorer.net/ 进行AST分析。
+
 如图所示：
 ![](https://img4.tuhu.org/PeccancyCheXingYi/Fi-8bDBlO2XddekCkb9NTbL1eXv3_w649_h800.jpeg@100Q.jpg)
 
