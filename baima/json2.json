@@ -1,0 +1,4732 @@
+{
+  "_id": "5f7428f2e79cde40d9fc1cbd",
+  "_status": 0,
+  "_type": "inner",
+  "_prop": [],
+  "_hash": "",
+  "_v": 0,
+  "_project": "5f74287fe79cde40d9fc1ca9",
+  "_name": "控制台",
+  "_owner": "5f74287de79cde40d9fc1ca6",
+  "_creator": "5f74287de79cde40d9fc1ca6",
+  "_option": {
+    "topbar": true,
+    "export": false,
+    "menu": true,
+    "pc_width": 40,
+    "mobile_width": 25,
+    "pc": {
+      "paddingTop": 0,
+      "paddingBottom": 0
+    },
+    "mobile": {
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  "createdAt": "2020-08-04T09:17:52.682Z",
+  "updatedAt": "2020-10-09T03:35:54.839Z",
+  "__v": 0,
+  "_view": {
+    "pc": [
+      {
+        "body": {
+          "width": 40,
+          "height": 3,
+          "left": 0,
+          "top": 0,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {},
+        "action": {},
+        "index": 0,
+        "template": "base-block",
+        "query": [],
+        "key": "view_1597050268231",
+        "name": "块",
+        "type": "mixed",
+        "adapter": {},
+        "group": [
+          "view_1596098667289",
+          "view_1596098669870",
+          "view_1596098668990",
+          "view_1596099860896",
+          "view_1596532851964",
+          "view_1596100282608"
+        ],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 40,
+          "height": 3,
+          "left": 0,
+          "top": 0,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "bottom"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 1,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596098667289",
+        "name": "bg",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 14,
+          "height": 2,
+          "left": 1,
+          "top": 0,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "md",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 2,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596098669870",
+        "name": "标题",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 26,
+          "height": 2,
+          "left": 1,
+          "top": 1,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(139,139,139,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 3,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596098668990",
+        "name": "简述",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "请在此输入文字作为副标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 2,
+          "height": 1,
+          "left": 32,
+          "top": 1,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "#76CA02"
+          },
+          "border": {
+            "color": "rgba(0,0,0,0)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "rgba(255,255,255,1)"
+        },
+        "action": {},
+        "index": 4,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1596099860896",
+        "name": "button-新增",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "按钮文字",
+            "model": "default",
+            "type": "string",
+            "default": "添加"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 2,
+          "height": 1,
+          "left": 34,
+          "top": 1,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "rgba(0,168,255,1)"
+        },
+        "action": {},
+        "index": 5,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1596532851964",
+        "name": "button-编辑",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "按钮文字",
+            "model": "default",
+            "type": "string",
+            "default": "编辑"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 1,
+          "left": 36,
+          "top": 1,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "rgba(0,168,255,1)"
+        },
+        "action": {},
+        "index": 6,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1596100282608",
+        "name": "button-删除 ",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "按钮文字",
+            "model": "default",
+            "type": "string",
+            "default": "删除"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 13,
+          "height": 5,
+          "left": 0,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 7,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596098678655",
+        "name": "bg1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 13,
+          "height": 5,
+          "left": 13,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 8,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596532766997",
+        "name": "bg2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 14,
+          "height": 5,
+          "left": 26,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              "5"
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 9,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596532785717",
+        "name": "bg3",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 7,
+          "height": 1,
+          "left": 4,
+          "top": 4,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(103,128,166,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 10,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596098722463",
+        "name": "标题1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 8,
+          "height": 1,
+          "left": 17,
+          "top": 4,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(97,125,159,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 11,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596098698167",
+        "name": "标题2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 10,
+          "height": 1,
+          "left": 30,
+          "top": 4,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(108,132,163,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 12,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596098699326",
+        "name": "标题3",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 3,
+          "left": 1,
+          "top": 4,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "image",
+            "value": "http://pan.bnocode.com/project/5ee84e626646265863211234/5ee84e62664626586321123d/image/20200810/1597050122838_%E7%BB%84%2021064%402x.png"
+          },
+          "border": {
+            "color": "rgba(255,255,255,1)",
+            "width": 22,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 13,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596098747846",
+        "name": "图片 1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 3,
+          "left": 14,
+          "top": 4,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "image",
+            "value": "http://pan.bnocode.com/project/5ee84e626646265863211234/5ee84e62664626586321123d/image/20200810/1597050127404_%E7%BB%84%2021065%402x.png"
+          },
+          "border": {
+            "color": "rgba(255,255,255,1)",
+            "width": 22,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 14,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596532931588",
+        "name": "图片 2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 3,
+          "left": 27,
+          "top": 4,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "image",
+            "value": "http://pan.bnocode.com/project/5ee84e626646265863211234/5ee84e62664626586321123d/image/20200810/1597050131461_%E7%BB%84%2021066%402x.png"
+          },
+          "border": {
+            "color": "rgba(255,255,255,1)",
+            "width": 22,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 15,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596532938621",
+        "name": "图片 3",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 8,
+          "height": 2,
+          "left": 5,
+          "top": 5,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": true,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "xl",
+          "textWeight": "bold",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {
+          "click": {
+            "type": "program",
+            "value": {
+              "flow": "",
+              "inner": [],
+              "skip": false
+            }
+          }
+        },
+        "index": 16,
+        "template": "base-number",
+        "query": [],
+        "key": "view_1596532950724",
+        "name": "数字1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "数字",
+            "model": "default",
+            "type": "number",
+            "default": "100204"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 8,
+          "height": 2,
+          "left": 17,
+          "top": 5,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "xl",
+          "textWeight": "bold",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 17,
+        "template": "base-number",
+        "query": [],
+        "key": "view_1596532950212",
+        "name": "数字2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "数字",
+            "model": "default",
+            "type": "number",
+            "default": "5160"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 10,
+          "height": 2,
+          "left": 30,
+          "top": 5,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "xl",
+          "textWeight": "bold",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 18,
+        "template": "base-number",
+        "query": [],
+        "key": "view_1596532949724",
+        "name": "数字3",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "数字",
+            "model": "default",
+            "type": "number",
+            "default": "765200"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 2,
+          "left": 9,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": true,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "xs",
+          "textWeight": "400",
+          "align": "right-center",
+          "primaryColor": "rgba(0,168,255,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 19,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596532965108",
+        "name": "查看全部1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "查看全部"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 2,
+          "left": 22,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": true,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "xs",
+          "textWeight": "400",
+          "align": "right-center",
+          "primaryColor": "rgba(0,168,255,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 20,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596532972548",
+        "name": "查看全部2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "查看全部"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 3,
+          "height": 2,
+          "left": 36,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": true,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "xs",
+          "textWeight": "400",
+          "align": "right-center",
+          "primaryColor": "rgba(0,168,255,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 21,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596532977428",
+        "name": "查看全部3",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "查看全部"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 26,
+          "height": 14,
+          "left": 0,
+          "top": 8,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 22,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596532887228",
+        "name": "bg4",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 4,
+          "height": 3,
+          "left": 1,
+          "top": 8,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "md",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 23,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596533020044",
+        "name": "title4",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 24,
+          "height": 12,
+          "left": 1,
+          "top": 10,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {},
+        "action": {},
+        "index": 24,
+        "template": "chart-line",
+        "query": [],
+        "key": "view_1596533071772",
+        "name": "折线图",
+        "type": "view",
+        "adapter": {
+          "categories": {
+            "key": "categories",
+            "format": "",
+            "name": "分组",
+            "model": "array",
+            "type": "string",
+            "default": "[\"文本1\", \"文本2\", \"文本3\", \"文本4\", \"文本5\", \"文本6\"]"
+          },
+          "series": {
+            "key": "series",
+            "name": "线系列列表",
+            "model": "collection",
+            "type": "manual"
+          },
+          "series.name": {
+            "name": "系列名称",
+            "key": "series.name",
+            "type": "string",
+            "model": "default",
+            "default": "文本内容",
+            "format": ""
+          },
+          "series.data": {
+            "key": "series.data",
+            "format": "",
+            "name": "Y值",
+            "model": "array",
+            "type": "number",
+            "default": "[10,50,100,20,450,703]"
+          },
+          "series[0].name": {
+            "name": "[0].系列名称",
+            "key": "series[0].name",
+            "type": "string",
+            "model": "default",
+            "default": "文本内容",
+            "format": "",
+            "parent": {
+              "name": "系列名称",
+              "key": "series.name",
+              "type": "string",
+              "model": "default",
+              "default": "文本内容",
+              "format": ""
+            }
+          },
+          "series[0].data": {
+            "key": "series[0].data",
+            "format": "",
+            "name": "[0].Y值",
+            "model": "array",
+            "type": "number",
+            "default": "[10,50,260,30,450,643]",
+            "parent": {
+              "key": "series.data",
+              "format": "",
+              "name": "Y值",
+              "model": "array",
+              "type": "number",
+              "default": "[10,50,100,20,450,703]"
+            }
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 14,
+          "height": 14,
+          "left": 26,
+          "top": 8,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 25,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1596532909251",
+        "name": "bg5",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 4,
+          "height": 3,
+          "left": 27,
+          "top": 8,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "md",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)",
+          "lineHeight": 1.15
+        },
+        "action": {},
+        "index": 26,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1596533036620",
+        "name": "标题5",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 12,
+          "height": 12,
+          "left": 27,
+          "top": 10,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {},
+        "action": {},
+        "index": 27,
+        "template": "chart-pie",
+        "query": [],
+        "key": "view_1596533090980",
+        "name": "饼图",
+        "type": "view",
+        "adapter": {
+          "name": {
+            "name": "分组",
+            "key": "name",
+            "type": "string",
+            "model": "array",
+            "default": "[\"文本1\", \"文本2\", \"文本3\"]",
+            "format": ""
+          },
+          "value": {
+            "name": "数值",
+            "key": "value",
+            "type": "number",
+            "model": "array",
+            "default": "[10, 50, 100]",
+            "format": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 4,
+          "height": 1,
+          "left": 5,
+          "top": 4,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "#000"
+        },
+        "action": {
+          "click": {
+            "type": "program",
+            "value": {
+              "flow": "",
+              "inner": [
+                "5f7434ffb75dee40db1b593c"
+              ],
+              "skip": true
+            }
+          }
+        },
+        "index": 28,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1601460204344",
+        "name": "按钮_1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "name": "按钮文字",
+            "key": "value",
+            "type": "string",
+            "model": "default",
+            "default": "按钮",
+            "format": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 2,
+          "height": 2,
+          "left": 0,
+          "top": 0,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false,
+          "limit": {
+            "minHeight": 1,
+            "minHeightStatus": false,
+            "maxHeight": 22,
+            "maxHeightStatus": false,
+            "minWidth": 1,
+            "maxWidth": 40
+          }
+        },
+        "option": {},
+        "action": {},
+        "index": 29,
+        "template": "base-custom",
+        "query": [],
+        "key": "view_1601460922536",
+        "name": "下拉菜单_1",
+        "type": "view",
+        "adapter": {},
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": "5f745abbb75dee40db1bd8bc"
+      }
+    ],
+    "mobile": [
+      {
+        "body": {
+          "width": 25,
+          "height": 20,
+          "left": 0,
+          "top": 0,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {},
+        "action": {},
+        "index": 0,
+        "template": "base-block",
+        "query": [],
+        "key": "view_1597050317349",
+        "name": "块",
+        "type": "mixed",
+        "adapter": {},
+        "group": [
+          "view_1597050317350",
+          "view_1597050317351",
+          "view_1597050317352",
+          "view_1597050317353",
+          "view_1597050317354",
+          "view_1597050317355"
+        ],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 10,
+          "left": 0,
+          "top": 0,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "bottom"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 1,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050317350",
+        "name": "bg",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 14,
+          "height": 2,
+          "left": 1,
+          "top": 1,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "lg",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 2,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597050317351",
+        "name": "标题",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 2,
+          "left": 1,
+          "top": 3,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(139,139,139,1)"
+        },
+        "action": {},
+        "index": 3,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597050317352",
+        "name": "简述",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "请在此输入文字作为副标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 9,
+          "height": 3,
+          "left": 1,
+          "top": 6,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "#76CA02"
+          },
+          "border": {
+            "color": "rgba(0,0,0,0)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "rgba(255,255,255,1)"
+        },
+        "action": {},
+        "index": 4,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1597050317353",
+        "name": "button-新增",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "按钮文字",
+            "model": "default",
+            "type": "string",
+            "default": "添加"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 8,
+          "height": 3,
+          "left": 11,
+          "top": 6,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "rgba(0,168,255,1)"
+        },
+        "action": {},
+        "index": 5,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1597050317354",
+        "name": "button-编辑",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "按钮文字",
+            "model": "default",
+            "type": "string",
+            "default": "编辑"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 5,
+          "height": 3,
+          "left": 20,
+          "top": 6,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "textColor": "rgba(0,168,255,1)"
+        },
+        "action": {},
+        "index": 6,
+        "template": "base-button",
+        "query": [],
+        "key": "view_1597050317355",
+        "name": "button-删除 ",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "按钮文字",
+            "model": "default",
+            "type": "string",
+            "default": "删除"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 7,
+          "left": 0,
+          "top": 10,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 7,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050488822",
+        "name": "bg1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 5,
+          "height": 5,
+          "left": 2,
+          "top": 11,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "image",
+            "value": "http://pan.bnocode.com/project/5ee84e626646265863211234/5ee84e62664626586321123d/image/20200810/1597050122838_%E7%BB%84%2021064%402x.png"
+          },
+          "border": {
+            "color": "rgba(255,255,255,1)",
+            "width": 7,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 8,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050504485",
+        "name": "图片 1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 9,
+          "height": 2,
+          "left": 8,
+          "top": 11,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(103,128,166,1)"
+        },
+        "action": {},
+        "index": 9,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597050543333",
+        "name": "标题1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 14,
+          "height": 3,
+          "left": 8,
+          "top": 12,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "xl",
+          "textWeight": "bold",
+          "align": "left-bottom",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 10,
+        "template": "base-number",
+        "query": [],
+        "key": "view_1597050554477",
+        "name": "数字1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "数字",
+            "model": "default",
+            "type": "number",
+            "default": "100200"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 7,
+          "left": 0,
+          "top": 17,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 11,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050636845",
+        "name": "bg1 1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 5,
+          "height": 5,
+          "left": 2,
+          "top": 18,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "image",
+            "value": "http://pan.bnocode.com/project/5ee84e626646265863211234/5ee84e62664626586321123d/image/20200810/1597050127404_%E7%BB%84%2021065%402x.png"
+          },
+          "border": {
+            "color": "rgba(255,255,255,1)",
+            "width": 7,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 12,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050649173",
+        "name": "图片 2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 7,
+          "height": 2,
+          "left": 8,
+          "top": 18,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(103,128,166,1)"
+        },
+        "action": {},
+        "index": 13,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597050681045",
+        "name": "标题1 1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 9,
+          "height": 3,
+          "left": 8,
+          "top": 19,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "xl",
+          "textWeight": "bold",
+          "align": "left-bottom",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 14,
+        "template": "base-number",
+        "query": [],
+        "key": "view_1597050693229",
+        "name": "数字1 1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "数字",
+            "model": "default",
+            "type": "number",
+            "default": "100200"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 7,
+          "left": 0,
+          "top": 24,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 15,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050731045",
+        "name": "bg1 2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 5,
+          "height": 5,
+          "left": 2,
+          "top": 25,
+          "fill": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "image",
+            "value": "http://pan.bnocode.com/project/5ee84e626646265863211234/5ee84e62664626586321123d/image/20200810/1597050131461_%E7%BB%84%2021066%402x.png"
+          },
+          "border": {
+            "color": "rgba(255,255,255,1)",
+            "width": 7,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 16,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050740589",
+        "name": "图片 3",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 7,
+          "height": 2,
+          "left": 8,
+          "top": 25,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "sm",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(103,128,166,1)"
+        },
+        "action": {},
+        "index": 17,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597050771197",
+        "name": "标题1 2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 9,
+          "height": 3,
+          "left": 8,
+          "top": 26,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": true
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "xl",
+          "textWeight": "bold",
+          "align": "left-bottom",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 18,
+        "template": "base-number",
+        "query": [],
+        "key": "view_1597050790189",
+        "name": "数字1 2",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "数字",
+            "model": "default",
+            "type": "number",
+            "default": "100200"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 23,
+          "left": 0,
+          "top": 31,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 19,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597050991046",
+        "name": "bg4",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 4,
+          "height": 2,
+          "left": 1,
+          "top": 32,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "md",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 20,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597051004478",
+        "name": "title4",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 23,
+          "left": 0,
+          "top": 32,
+          "fill": {
+            "left": false,
+            "right": true,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              0
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {},
+        "action": {},
+        "index": 21,
+        "template": "chart-line",
+        "query": [],
+        "key": "view_1597051020278",
+        "name": "折线图",
+        "type": "view",
+        "adapter": {
+          "categories": {
+            "key": "categories",
+            "format": "",
+            "name": "分组",
+            "model": "array",
+            "type": "string",
+            "default": "[\"文本1\", \"文本2\", \"文本3\", \"文本4\", \"文本5\", \"文本6\"]"
+          },
+          "series": {
+            "key": "series",
+            "name": "线系列列表",
+            "model": "collection",
+            "type": "manual"
+          },
+          "series.name": {
+            "name": "系列名称",
+            "key": "series.name",
+            "type": "string",
+            "model": "default",
+            "default": "文本内容",
+            "format": ""
+          },
+          "series.data": {
+            "key": "series.data",
+            "format": "",
+            "name": "Y值",
+            "model": "array",
+            "type": "number",
+            "default": "[10,50,100,20,450,703]"
+          },
+          "series[0].name": {
+            "name": "[0].系列名称",
+            "key": "series[0].name",
+            "type": "string",
+            "model": "default",
+            "default": "文本内容",
+            "format": "",
+            "parent": {
+              "name": "系列名称",
+              "key": "series.name",
+              "type": "string",
+              "model": "default",
+              "default": "文本内容",
+              "format": ""
+            }
+          },
+          "series[0].data": {
+            "key": "series[0].data",
+            "format": "",
+            "name": "[0].Y值",
+            "model": "array",
+            "type": "number",
+            "default": "[10,50,260,30,450,643]",
+            "parent": {
+              "key": "series.data",
+              "format": "",
+              "name": "Y值",
+              "model": "array",
+              "type": "number",
+              "default": "[10,50,100,20,450,703]"
+            }
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 25,
+          "height": 21,
+          "left": 0,
+          "top": 54,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "backgroundColor",
+            "value": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "color": "rgba(233,233,233,1)",
+            "width": 1,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [
+              5
+            ],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "fitDegree": "auto"
+        },
+        "action": {},
+        "index": 22,
+        "template": "base-image",
+        "query": [],
+        "key": "view_1597051050398",
+        "name": "bg4 1",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "图片",
+            "model": "default",
+            "type": "image",
+            "default": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 4,
+          "height": 2,
+          "left": 1,
+          "top": 55,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {
+          "textSize": "md",
+          "textWeight": "400",
+          "align": "left-center",
+          "primaryColor": "rgba(32,119,236,1)"
+        },
+        "action": {},
+        "index": 23,
+        "template": "base-text",
+        "query": [],
+        "key": "view_1597051066861",
+        "name": "标题5",
+        "type": "view",
+        "adapter": {
+          "value": {
+            "key": "value",
+            "format": "",
+            "name": "文本",
+            "model": "default",
+            "type": "string",
+            "default": "标题"
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      },
+      {
+        "body": {
+          "width": 24,
+          "height": 19,
+          "left": 1,
+          "top": 57,
+          "fill": {
+            "left": false,
+            "right": false,
+            "top": false,
+            "bottom": false
+          },
+          "autoHeight": false,
+          "autoWidth": false,
+          "relative": false,
+          "opacity": 100,
+          "padding": {
+            "max": 100,
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          },
+          "fixed": {
+            "enable": false,
+            "top": false,
+            "bottom": false
+          },
+          "background": {
+            "type": "none",
+            "value": ""
+          },
+          "border": {
+            "color": "#000",
+            "width": 0,
+            "style": "solid",
+            "position": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "radiusOnly": [],
+            "radiusMore": [],
+            "radiusState": true
+          },
+          "boxShadow": false
+        },
+        "option": {},
+        "action": {},
+        "index": 24,
+        "template": "chart-pie",
+        "query": [],
+        "key": "view_1597051086070",
+        "name": "饼图",
+        "type": "view",
+        "adapter": {
+          "name": {
+            "name": "分组",
+            "key": "name",
+            "type": "string",
+            "model": "array",
+            "default": "[\"文本1\", \"文本2\", \"文本3\"]",
+            "format": ""
+          },
+          "value": {
+            "name": "数值",
+            "key": "value",
+            "type": "number",
+            "model": "array",
+            "default": "[10, 50, 100]",
+            "format": ""
+          }
+        },
+        "group": [],
+        "visible": {
+          "visible": true,
+          "condition": []
+        },
+        "sort": "",
+        "vid": ""
+      }
+    ]
+  }
+}

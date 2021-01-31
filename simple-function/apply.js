@@ -1,16 +1,17 @@
-Function.prototype.myApply = function (contenxt) {
+Function.prototype.myApply = function (context) {
   if (typeof this !== 'function') {
     throw new Error('no function')
   }
   const fn = Symbol['fn']
-  contenxt[fn] = this
+  context[fn] = this
   var res = null
+
   if (arguments[1]) {
-    res = contenxt[fn](...arguments[1])
+    res = context[fn](...arguments[1])
   } else {
-    res = contenxt[fn]()
+    res = context[fn]()
   }
-  delete contenxt[fn]
+  delete context[fn]
   return res
 }
 
@@ -21,7 +22,11 @@ var obj = {
 this.a = 1
 
 function test() {
+  console.log(arguments)
   console.log(this.a, ...arguments)
 }
 
-test.myApply(obj)
+test.myApply(obj, 'a')
+
+// test.call(this, arg1, arg2);
+// test.apply(this, [arg1, arg2])

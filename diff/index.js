@@ -79,6 +79,6 @@ function diff(oldData, newData) {
   compare(newData)
   return diffData
 }
-const res = diff(data, newData)
+const res = diff(newData, data)
 console.log(res)
 

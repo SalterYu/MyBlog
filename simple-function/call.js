@@ -18,11 +18,11 @@ Function.prototype.myCall = function (ctx, ...args) {
 
 window.a = 'window'
 
-var obj = {a: 'obj'}
+var obj = {a: 'obj', b: '123'}
 
 function foo(key) {
   console.log(this[key])
 }
 
-foo.myCall(null, 'a')
+foo.myCall(obj, 'a')
 

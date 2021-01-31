@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  class Route {
+    constructor() {
+      this.routes = {}
+      
+      this.currentHash = ''
+      this.refreshRoute = this.refreshRoute.bind(this)
+      window.addEventListener('load', this.refreshRoute, false)
+      window.addEventListener('hashchange', this.refreshRoute, false)
+    }
+    setRoute(path, cb) {
+      this.routes[path] = cb || function () {}
+    }
+    
+    refreshRoute() {
+      this.currentHash = location.hash.slice(1) || '/'
+      this.routes[this.currentHash] && this.routes[this.currentHash]()
+    }
+  }
+  
+  const route = new Route()
+  route.setRoute('home/index', () => {
+    console.log('home/index')
+  })
+  route.setRoute('home/index1', () => {
+    console.log('home/index1')
+  })
+  route.setRoute('home/index2', () => {
+    console.log('home/index2')
+  })
+</script>
+
+</body>
+</html>

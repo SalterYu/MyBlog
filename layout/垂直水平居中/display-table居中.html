@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #b {
+    display: inline-block;
+  }
+  
+  #a::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    background-color: #0cb527;
+  }
+</style>
+<body>
+<div id="a" style="width: 500px;height: 500px;background-color: yellow">
+  <div id="b" style="width: 30px;height: 30px;background-color: blue">12313</div>
+  <div id="b" style="width: 50px;height: 50px;background-color: blue">12313</div>
+</div>
+</body>
+</html>

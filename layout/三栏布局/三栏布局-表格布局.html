@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>三栏布局-表格布局</title>
+</head>
+<style>
+  html,body,.layout {
+    height: 100%;
+  }
+  .layout {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  .left,.center,.right {
+    display: table-cell;
+    height: 100%;
+  }
+  .left {
+    background-color: #1ab2e8;
+    width: 300px;
+  }
+  .center {
+    background-color: green;
+  }
+  .right {
+    width: 300px;
+    background-color: red;
+  }
+</style>
+<body>
+<div class="layout">
+  <div class="left"></div>
+  <div class="center"></div>
+  <div class="right"></div>
+</div>
+</body>
+</html>

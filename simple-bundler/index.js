@@ -24,6 +24,7 @@ function createAsset(filename) {
       dependencies.push(node.source.value)
     }
   })
+  console.log(ast)
   const id = ID++
   const { code } = babel.transformFromAst(ast, null, {
     presets: ['env']

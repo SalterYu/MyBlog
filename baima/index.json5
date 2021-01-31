@@ -1,0 +1,62 @@
+{
+  "tag": "组件tag",
+  "key": "VNode名称唯一",
+  "vid": "",
+  "name": "组件名称",
+  "type": "组件的类型，是容器组件还是原子组件等类型",
+  "id": "view_id",
+  "sort": "",
+  "property": {
+    "value": "",
+    "props": {},
+    "style": {},
+    "class": [],
+    "nativeOn": {},
+    "option": [],
+    "on": {}, // 组件监听的事件，Vue原生
+    "emit": {
+      "click": {
+        "type": "code", // 当前事件的类型: none, redirect, program, code,分别表示为：无操作，重定向新链接，通知当前页面的其他组件，自定义代码交互
+        "value": {
+          "code": "",
+        }
+      },
+      "click": {
+        "type": "redirect",
+        "value": {
+          "type": "outter",
+          "blank": true,
+          "url": "https://www.baidu.com",
+          "inner": []
+        }
+      },
+      "click": {
+        "type": "program",
+        "value": [{
+          "receiver": "其他组件的key或者vid？需沟通下用vid还是key",
+          "method": "",
+          "param": {}
+        }],
+      },
+    }
+  },
+  "adapter": {
+    // 用于做组件中内部值的适配，做转换, 以及默认值
+  },
+  "visible": {
+    // 控制当前组件受什么组件影响而展示
+    "visible": true,
+    "condition": [{
+      // 显示条件，可能受globalState数据影响，也有可能受其他组件影响，只有所有条件符合才可以展示。
+      source: "store",
+      key: "a.b", // 即 store.a.b === '12'
+      value: "xxx",
+      func: "() => {}", // 或者function， 优先function
+    }, {
+      source: "program",
+      key: "其他组件的key或者vid？需沟通下用vid还是key",
+      value: "xxxx",  // 即 其他组件的value值 === 'xxxx'
+      func: "() => {}", // 或者function， 优先function
+    }]
+  }
+}

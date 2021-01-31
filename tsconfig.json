@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./typescript",
+    "inlineSourceMap": false,
+    // "sourceRoot": "src",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "module": "es2015",
+    "target": "es5",
+    "allowJs": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "typeRoots": ["./typings/**/*"],
+    "paths": {
+    },
+    "lib": ["es2015", "es6", "es2017", "dom"]
+  },
+  "exclude": ["node_modules", "dist"]
+}

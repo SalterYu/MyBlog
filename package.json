@@ -11,6 +11,10 @@
   "dependencies": {
     "flow": "^0.2.3",
     "flow-bin": "^0.92.1",
-    "recast": "^0.17.3"
+    "typescript": "3.9.2",
+    "recast": "^0.17.3",
+    "iconv-lite": "^0.6.2",
+    "pako": "^1.0.11",
+    "vue": "^2.6.12"
   }
 }

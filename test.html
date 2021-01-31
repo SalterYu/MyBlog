@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  .tab {
+    padding-left: 20px;
+  }
+  .tab::before {
+    content: "";
+    width: 5px;
+    height: 100px;
+    display: inline-block;
+    background-color: red;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .text {
+    font-size: 15px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+</style>
+<body>
+<!--<button id="button">click</button>-->
+<!--<input type="checkbox" id="checkbox">-->
+<div>
+  <div class="tab">
+    <div class="text">方案一说明</div>
+  </div>
+</div>
+<script>
+  // const checkbox = document.querySelector('#checkbox')
+  //
+  // const button = document.querySelector('#button')
+  // button.addEventListener('click', () => {
+  //   Promise.resolve().then(_ => console.log('promise1'))
+  //   console.log('callback1')
+  // })
+  //
+  // button.addEventListener('click', () => {
+  //   Promise.resolve().then(_ => console.log('promise2'))
+  //   console.log('callback2')
+  // })
+
+  // const nextClick = new Promise(resolve => {
+  //   checkbox.addEventListener('click', resolve)
+  // })
+  //
+  // nextClick.then(event => {
+  //   console.log(event)
+  //   event.preventDefault()
+  // })
+  //
+  // checkbox.click()
+  // Promise.resolve().then(_ => console.log('promise1'))
+  // console.log('callback1')
+  // Promise.resolve().then(_ => console.log('promise2'))
+  // console.log('callback2')
+  
+  // button.click()
+  function f1 () {
+    // await f2()
+    // console.log(2)
+
+    return f2().then(_ => {
+      console.log(2)
+    })
+  }
+  
+  async function f2() {
+    console.log(1)
+    Promise.resolve().then(() => console.log(3)).then(_ => console.log(4)).then(_ => console.log(6))
+  }
+  
+  f1().then(_ => console.log(5))
+  
+</script>
+</body>
+</html>
+

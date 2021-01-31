@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  const node = document.querySelector('#root')
+  function MyComponent() {
+    this._root = document.createElement('div')
+    this.data = {
+      a: 'MyComponent'
+    }
+    this.append = function () {
+      const oText = document.createTextNode(this.data.a)
+      this._root.appendChild(oText)
+      node.appendChild(this._root)
+    }
+  }
+  const oDiv = new MyComponent()
+  oDiv.append()
+</script>
+</body>
+</html>

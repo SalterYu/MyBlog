@@ -1,0 +1,78 @@
+[
+  {
+    "_id": "5f7fd251b75dee40db1d15c9",
+    "_status": 0,
+    "_auth": "inner",
+    "_type": "view",
+    "_tag": [],
+    "_mode": [],
+    "_template": "<template>\r\n  <div class=\"view\">\r\n    <div style=\"background:#eee;padding: 20px\">\r\n      <Card :bordered=\"false\">\r\n        <p slot=\"title\">No border title</p>\r\n        <p>Content of no border type. Content of no border type. Content of no border type. Content of no border type.</p>\r\n      </Card>\r\n    </div>\r\n  </div>\r\n</template>\r\n<script>\r\nmodule.exports = {\r\n  data() {\r\n    return {};\r\n  },\r\n  methods: {},\r\n};\r\n</script>\r\n<style lang=\"less\" scoped>\r\n.view {\r\n}\r\n</style>",
+    "_name": "卡片_5",
+    "_project": "5f74287fe79cde40d9fc1ca9",
+    "_owner": "5f74287de79cde40d9fc1ca6",
+    "createdAt": "2020-10-09T03:00:33.579Z",
+    "updatedAt": "2020-10-09T03:00:33.579Z",
+    "__v": 0
+  },
+  {
+    "_id": "5f7fccbab75dee40db1d15ba",
+    "_status": 0,
+    "_auth": "inner",
+    "_type": "view",
+    "_tag": [],
+    "_mode": [],
+    "_template": "<template>\r\n  <div class=\"view\">\r\n    <Carousel v-model=\"value\" loop>\r\n      <CarouselItem>\r\n        <div class=\"demo-carousel\">1</div>\r\n      </CarouselItem>\r\n      <CarouselItem>\r\n        <div class=\"demo-carousel\">2</div>\r\n      </CarouselItem>\r\n      <CarouselItem>\r\n        <div class=\"demo-carousel\">3</div>\r\n      </CarouselItem>\r\n      <CarouselItem>\r\n        <div class=\"demo-carousel\">4</div>\r\n      </CarouselItem>\r\n    </Carousel>\r\n  </div>\r\n</template>\r\n<script>\r\nmodule.exports = {\r\n  data() {\r\n    return {\r\n      value: 0,\r\n    };\r\n  },\r\n  methods: {},\r\n};\r\n</script>\r\n<style lang=\"less\" scoped>\r\n.view {\r\n  height: 100%;\r\n  width: 100%;\r\n  position: relative;\r\n  .ivu-carousel {\r\n    height: 100%;\r\n  }\r\n}\r\n</style>",
+    "_name": "走马灯_2",
+    "_project": "5f74287fe79cde40d9fc1ca9",
+    "_owner": "5f74287de79cde40d9fc1ca6",
+    "createdAt": "2020-10-09T02:36:42.884Z",
+    "updatedAt": "2020-10-09T02:36:42.884Z",
+    "__v": 0
+  },
+  {
+    "_id": "5f7fccb7e79cde40d9fd6498",
+    "_status": 0,
+    "_auth": "inner",
+    "_type": "view",
+    "_tag": [],
+    "_mode": [],
+    "_template": "<template>\r\n  <div class=\"view\">\r\n    <Anchor show-ink>\r\n      <AnchorLink href=\"#basic_usage\" title=\"Basic Usage\" />\r\n      <AnchorLink href=\"#static_position\" title=\"Static Position\" />\r\n      <AnchorLink href=\"#API\" title=\"API\">\r\n        <AnchorLink href=\"#Anchor_props\" title=\"Anchor props\" />\r\n        <AnchorLink href=\"#Anchor_events\" title=\"Anchor events\" />\r\n        <AnchorLink href=\"#AnchorLink_props\" title=\"AnchorLink props\" />\r\n      </AnchorLink>\r\n    </Anchor>\r\n  </div>\r\n</template>\r\n<script>\r\nmodule.exports = {\r\n  data() {\r\n    return {};\r\n  },\r\n  methods: {},\r\n};\r\n</script>\r\n<style lang=\"less\" scoped>\r\n.view {\r\n  margin-top: 6px;\r\n  margin-left: 10px;\r\n}\r\n</style>",
+    "_name": "锚点_3",
+    "_project": "5f74287fe79cde40d9fc1ca9",
+    "_owner": "5f74287de79cde40d9fc1ca6",
+    "createdAt": "2020-10-09T02:36:39.414Z",
+    "updatedAt": "2020-10-09T02:36:39.414Z",
+    "__v": 0
+  },
+  {
+    "_id": "5f7fccafb75dee40db1d15b9",
+    "_status": 0,
+    "_auth": "inner",
+    "_type": "view",
+    "_tag": [],
+    "_mode": [],
+    "_template": "<template>\r\n  <div class=\"view\">\r\n    <CheckboxGroup v-model=\"fruit\">\r\n      <Checkbox label=\"香蕉\"></Checkbox>\r\n      <Checkbox label=\"苹果\"></Checkbox>\r\n      <Checkbox label=\"西瓜\"></Checkbox>\r\n    </CheckboxGroup>\r\n  </div>\r\n</template>\r\n<script>\r\nmodule.exports = {\r\n  data() {\r\n    return {\r\n      fruit: [\"苹果\"],\r\n    };\r\n  },\r\n  methods: {},\r\n};\r\n</script>\r\n<style lang=\"less\" scoped>\r\n.view {\r\n}\r\n</style>",
+    "_name": "多选框_2",
+    "_project": "5f74287fe79cde40d9fc1ca9",
+    "_owner": "5f74287de79cde40d9fc1ca6",
+    "createdAt": "2020-10-09T02:36:31.355Z",
+    "updatedAt": "2020-10-09T02:36:31.355Z",
+    "__v": 0
+  },
+  {
+    "_id": "5f745abbb75dee40db1bd8bc",
+    "_status": 0,
+    "_auth": "inner",
+    "_type": "view",
+    "_tag": [],
+    "_mode": [],
+    "_template": "<template>\r\n  <div class=\"view\">\r\n    <Dropdown>\r\n      <a href=\"javascript:void(0)\">\r\n        下拉菜单{{test}}2667\r\n        <Icon type=\"ios-arrow-down\"></Icon>\r\n      </a>\r\n      <DropdownMenu slot=\"list\">\r\n        <DropdownItem>驴打滚</DropdownItem>\r\n        <DropdownItem>炸酱面</DropdownItem>\r\n        <DropdownItem disabled>豆汁儿</DropdownItem>\r\n        <DropdownItem>冰糖葫芦</DropdownItem>\r\n        <DropdownItem divided>北京烤鸭</DropdownItem>\r\n        <DropdownItem divided>北京烤鸡</DropdownItem>\r\n      </DropdownMenu>\r\n    </Dropdown>\r\n  </div>\r\n</template>\r\n<script>\r\nmodule.exports = {\r\n  data() {\r\n    return {};\r\n  },\r\n  methods: {},\r\n  mounted() {\r\n    console.log(111111)\r\n  },\r\n  computed: {\r\n    test() {\r\n      return 1111\r\n    }\r\n  }\r\n};\r\n</script>\r\n<style lang=\"less\" scoped>\r\n.view {\r\n}\r\n</style>",
+    "_name": "下拉菜单_1",
+    "_project": "5f74287fe79cde40d9fc1ca9",
+    "_owner": "5f74287de79cde40d9fc1ca6",
+    "createdAt": "2020-09-30T10:15:23.495Z",
+    "updatedAt": "2020-10-09T03:36:07.244Z",
+    "__v": 0
+  }
+]
+

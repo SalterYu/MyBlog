@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>三栏布局，浮动布局</title>
+  <style>
+    html,body {
+      height: 100%;
+    }
+    
+    .layout {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 300px;
+      background-color: red;
+    }
+    
+    .center {
+      position: absolute;
+      left: 300px;
+      right: 300px;
+      top: 0;
+      height: 100%;
+      background-color: #0cb527;
+    }
+    
+    .right {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      top: 0;
+      width: 300px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <div class="left"></div>
+  <div class="center">
+  </div>
+  <div class="right"></div>
+</div>
+</body>
+</html>

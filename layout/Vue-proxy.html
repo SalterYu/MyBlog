@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <input class="input" v-model="a" />
+  <input type="button" value="增加" v-click="add">
+  <input type="button" value="减去" v-click="sub">
+  <div v-bind="a"></div>
+</div>
+<script>
+  class Watcher {
+    constructor(node, attr, data, key) {
+      this.node = node
+      this.attr = attr
+      this.data = data
+      this.key = key
+    }
+    update() {
+      this.node[this.attr] = this.data[this.key]
+    }
+  }
+  
+  class MyVue {
+    constructor(options) {
+      this.$el = document.querySelector(options.el)
+      this._binding = []
+      this.$methods = options.methods
+      this.$options = options
+      this._observe(options.data)
+      this._compile(this.$el)
+    }
+    _observe(data) {
+      var that = this
+      this.$data = new Proxy(data, {
+        set(target, key, value) {
+          let res = Reflect.set(target, key, value)
+          that._binding.forEach(item => item.update())
+          return res
+        }
+      })
+    }
+    _compile(root) {
+      const nodes = Array.prototype.slice.call(root.children)
+      let data = this.$data
+      nodes.forEach((node) => {
+        if (node.children.left > 0) this._compile(node.children)
+        if (node.hasAttribute('v-model')) {
+          let key = node.getAttribute('v-model')
+          node.value = data[key]
+          this._pushWatcher(new Watcher(node, 'value', data, key))
+          node.addEventListener('input', () => {
+            data[key] = node.value
+          })
+        }
+        if (node.hasAttribute('v-bind')) {
+          let key = node.getAttribute('v-bind')
+          node.innerHTML = data[key]
+          this._pushWatcher(new Watcher(node, 'innerHTML', data, key))
+        }
+        if (node.hasAttribute('v-click')) {
+          let key = node.getAttribute('v-click')
+          let method = this.$methods[key].bind(data)
+          node.addEventListener('click', method)
+        }
+      })
+    }
+    _pushWatcher(watcher) {
+      this._binding.push(watcher)
+    }
+  }
+  
+  
+  
+  new MyVue({
+    el: '#app',
+    data: {
+      a: 0
+    },
+    methods: {
+      add() {
+        this.a ++
+      },
+      sub() {
+        this.a --
+      }
+    }
+  })
+</script>
+</body>
+</html>

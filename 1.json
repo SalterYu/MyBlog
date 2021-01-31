@@ -1,0 +1,73 @@
+{
+  "products": {
+    "productInfoList": [
+      {
+        "pid": "TR-PR-P-CINTURATO-P1|12",
+        "category": null,
+        "productName": "倍耐力轮胎 新P1 Cinturato P1 225/55R16 99W Pirelli",
+        "productImage": "https://img3.tuhu.org/Images/Products/FnBLjNvTzT0mkjQAd_ZEEWC-aCpK_w800_h800.png@163w_163h_100Q.png",
+        "productNumber": 2,
+        "price": 595,
+        "marketingPrice": null,
+        "activityId": "810962c8-6cf6-4a49-b672-d5d8040c4086"
+      }
+    ],
+    "totalPriceInfo": {
+      "totalPrice": 1190,
+      "totalMarketingPrice": null
+    }
+  },
+  "services": {
+    "productInfoList": [
+      {
+        "pid": "FU-TUHU-LUTAI|1",
+        "category": null,
+        "productName": "17寸及以下轮胎安装",
+        "productImage": "https://img3.tuhu.org/Images/Products/FljzkwxKM7doeLW6ApkcfNOu52Ds_w800_h800.png@163w_163h_100Q.png",
+        "productNumber": 2,
+        "price": null,
+        "marketingPrice": 25,
+        "isNeedFilter": true,
+        "label": "服务"
+      },
+      {
+        "pid": "FU-TUHU-MFQCJC|1",
+        "category": null,
+        "productName": "免费常规检测服务",
+        "productImage": "https://img3.tuhu.org/Images/Products/Fggav-oyt4PYRxQY8dPjv6PweMH__w800_h800.png@163w_163h_100Q.png",
+        "productNumber": 1,
+        "price": null,
+        "marketingPrice": 99,
+        "isNeedFilter": false,
+        "label": "服务"
+      }
+    ],
+    "totalPriceInfo": {
+      "totalPrice": null,
+      "totalMarketingPrice": 99
+    }
+  },
+  "gifts": {
+    "productInfoList": [
+      {
+        "pid": "LF-QIMENZUI-LVHEJIN|",
+        "category": null,
+        "productName": "铝合金气门嘴",
+        "productImage": "https://img3.tuhu.org/Images/Products/fc27/8a42/3b188603efdeaa665ae1cbb6_w800_h800.png@163w_163h_100Q.png",
+        "productNumber": 2,
+        "price": null,
+        "marketingPrice": 30,
+        "label": "赠送"
+      }
+    ],
+    "totalPriceInfo": {
+      "totalPrice": null,
+      "totalMarketingPrice": 60
+    }
+  },
+  "deliveryFee": 0,
+  "isFreeInstall": true,
+  "tireInsuranceTag": "下单后免费领取轮胎险，两年内爆胎鼓包赔80%",
+  "orderTotalMarketingPrice": 1349,
+  "orderTotalPrice": 1190
+}

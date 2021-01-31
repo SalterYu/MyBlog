@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <div id="root">
+    <input type="text" v-model="num">
+    <input type="button" value="增加" v-click="add">
+    <input type="button" value="减去" v-click="sub">
+    <div v-bind="num"></div>
+  </div>
+</head>
+<body>
+<script>
+  class MyVue {
+    constructor(options) {
+      this.$el = document.querySelector(options.el)
+      this.$methods = options.methods
+      this._binding = {}
+      this._observe(options.data)
+      this._compile(this.$el)
+    }
+
+    _pushWatcher(watcher) {
+      if (!this._binding[watcher.key]) this._binding[watcher.key] = []
+      this._binding[watcher.key].push(watcher)
+    }
+    _observe(data) {
+      var that = this
+      this.$data = new Proxy(data, {
+        set(target, key, value) {
+          let res = Reflect.set(target, key, value)
+          that._binding[key].map(item => item.update())
+          return res
+        }
+      })
+    }
+    _compile(root) {
+      const nodes = Array.prototype.slice.call(root.children)
+      let data = this.$data
+      nodes.map((node) => {
+        if (node.children.length > 0) this._compile(node)
+        if (node.hasAttribute('v-bind')) {
+          let key = node.getAttribute('v-bind')
+          node.innerHTML = data[key]
+          this._pushWatcher(new Watcher(node, 'innerHTML', data, key))
+        }
+        if (node.hasAttribute('v-model')) {
+          let key = node.getAttribute('v-model')
+          node.value = data[key]
+          this._pushWatcher(new Watcher(node, 'value', data, key))
+          node.addEventListener('input', () => {data[key] = node.value;})
+        }
+        if (node.hasAttribute('v-click')) {
+          let methodName = node.getAttribute('v-click')
+          let method = this.$methods[methodName].bind(data)
+          node.addEventListener('click', method)
+        }
+      })
+    }
+  }
+
+  class Watcher {
+    constructor(node, attr, data,key) {
+      this.node = node
+      this.attr = attr
+      this.data = data
+      this.key = key
+    }
+    update(){
+      this.node[this.attr] = this.data[this.key]
+    }
+  }
+
+  new MyVue({
+    el: '#root',
+    data:{
+      num:0
+    },
+    methods:{
+      add(){
+        this.num++
+      },
+      sub(){
+        this.num--
+      }
+    }
+  })
+</script>
+</body>
+</html>
