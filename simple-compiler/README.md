@@ -200,8 +200,13 @@ const plugin = ({types: t}) => {
           const node = path.node
           const object = node.object
           if (t.isMemberExpression(node) && t.isIdentifier(object, {name: 'wx'})) {
-            // 下方的写法可能有问题，也许有官方的接口。
-            object.name = 'swan'
+            path.traverse({
+              Identifier(path) {
+                if (path.node.name === 'wx') {
+                  path.node.name = 'swan'
+                }
+              }
+            })
           }
         }
       }
@@ -254,4 +259,6 @@ function test() {
 ### 结尾
 分享几篇文章：
 - <a href="https://juejin.im/post/5c21b584e51d4548ac6f6c99">Babel的深入了解</a> 
-- <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md#toc-writing-your-first-babel-plugin">Babel插件手册</a> 
+- <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md#toc-writing-your-first-babel-plugin">Babel插件手册</a>
+- <a href="https://salteryu.github.io/">github上的其他文章</a>
+

@@ -85,8 +85,8 @@ function tokenizer(input) {
   return tokens
 }
 
-// const input = '(add 2 (subtract 4 "abc"))'
-//
-// console.log(tokenizer(input))
+const input = '(add 2 (subtract 4 "abc"))'
+
+console.log(tokenizer(input))
 
 module.exports = tokenizer

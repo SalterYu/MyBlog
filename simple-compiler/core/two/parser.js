@@ -96,6 +96,6 @@ const ast = {
 
 assert.deepStrictEqual(parser(tokens), ast)
 
-// console.log(JSON.stringify(parser(tokens), null, 2))
+console.log(JSON.stringify(parser(tokens), null, 2))
 
 module.exports = parser
